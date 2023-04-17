@@ -1,0 +1,12 @@
+<input type="text" id="sayi1">
+<input type="text" id="sayi2">
+<div id="sonuc"></div>
+<button>Topla</button>
+<script>
+  const button1 = document.querySelector("button");
+  button1.addEventListener("click", function () {
+    const s1 = Number(document.querySelector("#sayi1").value);
+    const s2 = Number(document.querySelector("#sayi2").value);
+    document.querySelector("#sonuc").innerHTML = (s1 + s2);
+  })
+</script>
